@@ -2,11 +2,9 @@
 import './App.css';
 import Landing from './landing';
 import Info from './info';
-
+import Form from './form';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
 
 function App() {
   return (
@@ -15,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />}></Route>
           <Route path="/info" element={<Info />}></Route>
+          <Route path="/form" element={<Form />}></Route>
         </Routes>
       </BrowserRouter>
 

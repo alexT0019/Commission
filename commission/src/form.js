@@ -1,10 +1,10 @@
 import NavBar from "./navbar";
 
-export default function Info() {
-    return(
+export default function Form() {
+    return (
         <div>
             <NavBar />
-            <h1>Info</h1>
+            <h1>Form</h1>
         </div>
     )
 }
