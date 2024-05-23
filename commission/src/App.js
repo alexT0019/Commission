@@ -1,13 +1,22 @@
 //import logo from './logo.svg';
 import './App.css';
 import Landing from './landing';
+import Info from './info';
+
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />}></Route>
+          <Route path="/info" element={<Info />}></Route>
+        </Routes>
+      </BrowserRouter>
 
       {/* Default App testing */}
       {/* <header className="App-header">

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Link from '@mui/material/Link';
 
 function samePageLinkNavigation(event) {
   if (
@@ -41,7 +42,7 @@ LinkTab.propTypes = {
 export default function NavBar() {
   //style
   const navStyle = {
-    marginLeft: 15, 
+    marginLeft: 15,
     marginRight: 15
   }
 
@@ -68,9 +69,22 @@ export default function NavBar() {
         aria-label="nav tabs example"
         role="navigation"
       >
-        <LinkTab style={navStyle} label="Items" href="/items" />
-        <LinkTab style={navStyle} label="Info" href="/info" />
-        <LinkTab style={navStyle} label="Form" href="/form" />
+        <Link style={navStyle} href="/" underline="none">
+          Items
+        </Link>
+        <Link style={navStyle} href="/info" underline="none">
+          Info
+        </Link>
+        <Link style={navStyle} href="#" underline="none">
+          Form
+        </Link>
+        {/* <LinkTab label="Page One" href="/" />
+  <LinkTab label="Page Two" href="/info" />
+  <LinkTab label="Page Three" href="/" /> */}
+
+  {/* If use Link can route but cannot use tab
+  If use LinkTab can use tab but cannot route */}
+
       </Tabs>
     </Box>
   );
