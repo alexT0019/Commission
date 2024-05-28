@@ -1,7 +1,13 @@
 export default function Items() {
     return(
         <div>
-            <h1>Items</h1>
+            <div>
+                <img src="" alt="" />
+            </div>
+            <div>
+                <h2>Title</h2>
+                <p>Paragraph</p>
+            </div>
         </div>
     )
 }
