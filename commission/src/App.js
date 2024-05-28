@@ -3,6 +3,7 @@ import './App.css';
 import Landing from './landing';
 import Info from './info';
 import Form from './form';
+import Items from './Pages/items';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
+          <Route path="/items" element={<Items />}></Route>
           <Route path="/info" element={<Info />}></Route>
           <Route path="/form" element={<Form />}></Route>
         </Routes>

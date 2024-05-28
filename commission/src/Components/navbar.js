@@ -16,7 +16,7 @@ export default function NavBar() {
       justifyContent={'center'}
     >
       <Link style={navStyle} href="/" underline="none">
-        Items
+        Home
       </Link>
       <Link style={navStyle} href="/info" underline="none">
         Info
