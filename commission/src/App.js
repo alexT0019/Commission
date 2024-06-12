@@ -1,9 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
-import Landing from './landing';
-import Info from './info';
-import Form from './form';
-import Items from './Pages/items';
+import Landing from './Pages/landing'
+import Info from './Pages/info';
+import Form from './Pages/form';
+//import Items from './Pages/items';
+import ItemList from './Pages/itemList';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
-          <Route path="/items" element={<Items />}></Route>
+          <Route path="/itemList" element={<ItemList />}></Route>
           <Route path="/info" element={<Info />}></Route>
           <Route path="/form" element={<Form />}></Route>
         </Routes>
